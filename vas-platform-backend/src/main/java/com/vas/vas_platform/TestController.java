@@ -1,0 +1,13 @@
+package com.vas.vas_platform;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestController {
+
+    @GetMapping("/api/test")
+    public String test() {
+        return "VAS Platform Backend is running";
+    }
+}
